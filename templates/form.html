@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static/basic.css">
+    <title>This is the Strawhat Application!</title>
+</head>
+
+<form method="post">
+    Name: <input name="name"/>
+    <br/><br/>
+    <button type="submit">Submit</button>
+  </form>
+
+{% if name %}
+<div class="content">
+    <p>Welcome to the crew, Strawhat {{name}}!</p>
+</div>
+{% endif %}
